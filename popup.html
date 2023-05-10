@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS stylesheet -->
+  <title>ChatGPT-4 Multi-Tab Resolver</title>
+</head>
+<body>
+  <div class="container">
+    <h1>ChatGPT-4 Multi-Tab Resolver</h1> <!-- Title of the popup -->
+
+    <p>Select model:</p>
+    <!-- Dropdown menu to select the GPT model -->
+    <select id="model-select">
+      <option value="gpt-3.5">GPT-3.5</option>
+      <option value="gpt-4">GPT-4</option>
+    </select>
+
+    <p>Select the number of agents:</p>
+    <!-- Dropdown menu to select the number of agents -->
+    <select id="num-agents-select">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3" selected>3</option>
+      <option value="4">4</option>
+    </select>
+
+    <p>Enter your question below:</p>
+    <!-- Form to input the user's question -->
+    <form id="question-form">
+      <textarea id="user-input" rows="4" cols="30" placeholder="Type your question here..."></textarea>
+      <button id="submit-button" type="submit">Submit</button>
+    </form>
+
+  </div>
+  <script src="popup.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>
